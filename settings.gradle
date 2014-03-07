@@ -1,0 +1,4 @@
+include ':actionbarsherlock'
+include ':contact'
+include ':roboguice-sherlock'
+include ':slidingmenu'

@@ -1,0 +1,1757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Fri Mar 07 17:15:26 CST 2014.<br/>
+0 errors and 122 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DuplicateIds">DuplicateIds: Duplicate ids within a single layout</a>
+</td></tr>
+<tr>
+<td class="countColumn">8</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DefaultLocale">DefaultLocale: Implied default locale in case conversion</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InconsistentLayout">InconsistentLayout: Inconsistent Layouts</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#AllowBackup">AllowBackup: Missing <code>allowBackup</code> attribute</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ObsoleteLayoutParam">ObsoleteLayoutParam: Obsolete layout params</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseCompoundDrawables">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a>
+</td></tr>
+<tr>
+<td class="countColumn">8</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#FloatMath">FloatMath: Using <code>FloatMath</code> instead of <code>Math</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InefficientWeight">InefficientWeight: Inefficient layout weight</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#NestedWeights">NestedWeights: Nested layout weights</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Overdraw">Overdraw: Overdraw: Painting regions more than once</a>
+</td></tr>
+<tr>
+<td class="countColumn">8</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UselessParent">UselessParent: Useless parent layout</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Typography">Usability:Typography</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TypographyEllipsis">TypographyEllipsis: Ellipsis string can be replaced with ellipsis character</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDuplicatesConfig">IconDuplicatesConfig: Identical bitmaps across various configurations</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDensities">IconDensities: Icon densities validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">30</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDuplicates">IconDuplicates: Duplicated icons under different names</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ViewConstructor">ViewConstructor: Missing View constructors for XML inflation</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">32</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (11)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="DuplicateIds"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DuplicateIds: Duplicate ids within a single layout</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:57</span>: <span class="message">Duplicate id @+id/abs__image, already defined earlier in this layout</span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         android:addStatesFromChildren="true"
+<span class="lineno">  55</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  56</span> 
+<span class="lineno">  57</span>         &lt;ImageView <span class="errorspan">android:id="@+id/abs__image"</span>
+<span class="lineno">  58</span>             android:layout_width="56dip"
+<span class="lineno">  59</span>             android:layout_height="36dip"
+</pre>
+<ul><span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:35</span>: <span class="message">@+id/abs__image originally defined here</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         android:addStatesFromChildren="true"
+<span class="lineno">  33</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  34</span> 
+<span class="lineno">  35</span>         &lt;ImageView <span class="errorspan">android:id="@+id/abs__image"</span>
+<span class="lineno">  36</span>             android:layout_width="56dip"
+<span class="lineno">  37</span>             android:layout_height="36dip"
+</pre></ul><span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:57</span>: <span class="message">Duplicate id @+id/abs__image, already defined earlier in this layout</span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         android:addStatesFromChildren="true"
+<span class="lineno">  55</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  56</span> 
+<span class="lineno">  57</span>         &lt;ImageView <span class="errorspan">android:id="@+id/abs__image"</span>
+<span class="lineno">  58</span>             android:layout_width="56dip"
+<span class="lineno">  59</span>             android:layout_height="36dip"
+</pre>
+<ul><span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:35</span>: <span class="message">@+id/abs__image originally defined here</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         android:addStatesFromChildren="true"
+<span class="lineno">  33</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  34</span> 
+<span class="lineno">  35</span>         &lt;ImageView <span class="errorspan">android:id="@+id/abs__image"</span>
+<span class="lineno">  36</span>             android:layout_width="56dip"
+<span class="lineno">  37</span>             android:layout_height="36dip"
+</pre></ul></div>
+<div class="metadata">Priority: 7 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks for duplicate ids within a single layout.</div>
+<div class="explanation">
+Within a layout, id's should be unique since otherwise <code>findViewById()</code> can return an unexpected view.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "DuplicateIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="DefaultLocale"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DefaultLocale: Implied default locale in case conversion</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java</a>:48</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>                     setText(text.toString().toUpperCase(Locale.ROOT));
+<span class="lineno">  46</span>                 } catch (NoSuchFieldError e) {
+<span class="lineno">  47</span>                     //Some manufacturer broke Locale.ROOT. See #572.
+<span class="lineno">  48</span>                     setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  49</span>                 }
+<span class="lineno">  50</span>             } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java</a>:48</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>                     setText(text.toString().toUpperCase(Locale.ROOT));
+<span class="lineno">  46</span>                 } catch (NoSuchFieldError e) {
+<span class="lineno">  47</span>                     //Some manufacturer broke Locale.ROOT. See #572.
+<span class="lineno">  48</span>                     setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  49</span>                 }
+<span class="lineno">  50</span>             } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java</a>:51</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  48</span>                     setText(text.toString().toUpperCase());
+<span class="lineno">  49</span>                 }
+<span class="lineno">  50</span>             } else {
+<span class="lineno">  51</span>                 setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  52</span>             }
+<span class="lineno">  53</span>         } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java</a>:51</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  48</span>                     setText(text.toString().toUpperCase());
+<span class="lineno">  49</span>                 }
+<span class="lineno">  50</span>             } else {
+<span class="lineno">  51</span>                 setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  52</span>             }
+<span class="lineno">  53</span>         } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java</a>:41</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>                     setText(text.toString().toUpperCase(Locale.ROOT));
+<span class="lineno">  39</span>                 } catch (NoSuchFieldError e) {
+<span class="lineno">  40</span>                     //Some manufacturer broke Locale.ROOT. See #572.
+<span class="lineno">  41</span>                     setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  42</span>                 }
+<span class="lineno">  43</span>             } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java</a>:41</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>                     setText(text.toString().toUpperCase(Locale.ROOT));
+<span class="lineno">  39</span>                 } catch (NoSuchFieldError e) {
+<span class="lineno">  40</span>                     //Some manufacturer broke Locale.ROOT. See #572.
+<span class="lineno">  41</span>                     setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  42</span>                 }
+<span class="lineno">  43</span>             } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java</a>:44</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>                     setText(text.toString().toUpperCase());
+<span class="lineno">  42</span>                 }
+<span class="lineno">  43</span>             } else {
+<span class="lineno">  44</span>                 setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  45</span>             }
+<span class="lineno">  46</span>         } else {
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java</a>:44</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use toUpperCase(Locale) instead</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>                     setText(text.toString().toUpperCase());
+<span class="lineno">  42</span>                 }
+<span class="lineno">  43</span>             } else {
+<span class="lineno">  44</span>                 setText(text.toString().<span class="errorspan">toUpperCase());</span>
+<span class="lineno">  45</span>             }
+<span class="lineno">  46</span>         } else {
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Finds calls to locale-ambiguous <code>String</code> manipulation methods.</div>
+<div class="explanation">
+Calling <code>String#toLowerCase()</code> or <code>#toUpperCase()</code> <b>without specifying an explicit locale</b> is a common source of bugs. The reason for that is that those methods will use the current locale on the user's device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for <code>i</code> is <b>not</b> <code>I</code>.<br/>
+<br/>
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call <code>String#toUpperCase(Locale.US)</code> instead. If you really want to use the current locale, call <code>String#toUpperCase(Locale.getDefault())</code> instead.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/java/util/Locale.html#default_locale">http://developer.android.com/reference/java/util/Locale.html#default_locale</a>
+</div><br/>To suppress this error, use the issue id "DefaultLocale" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InconsistentLayout"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InconsistentLayout: Inconsistent Layouts</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar.xml</a>:52</span>: <span class="message">The id "abs__split_action_bar" in layout "abs__screen_action_bar" is missing from the following layout configurations: layout-xlarge (present in layout)</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>         android:foregroundGravity="fill_horizontal|top"
+<span class="lineno">  50</span>         android:foreground="?attr/windowContentOverlay" />
+<span class="lineno">  51</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer
+<span class="lineno">  52</span>         <span class="errorspan">android:id="@+id/abs__split_action_bar"</span>
+<span class="lineno">  53</span>         android:layout_width="fill_parent"
+<span class="lineno">  54</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar.xml</a>:52</span>: <span class="message">The id "abs__split_action_bar" in layout "abs__screen_action_bar" is missing from the following layout configurations: layout-xlarge (present in layout)</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>         android:foregroundGravity="fill_horizontal|top"
+<span class="lineno">  50</span>         android:foreground="?attr/windowContentOverlay" />
+<span class="lineno">  51</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer
+<span class="lineno">  52</span>         <span class="errorspan">android:id="@+id/abs__split_action_bar"</span>
+<span class="lineno">  53</span>         android:layout_width="fill_parent"
+<span class="lineno">  54</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:53</span>: <span class="message">The id "abs__split_action_bar" in layout "abs__screen_action_bar_overlay" is missing from the following layout configurations: layout-xlarge (present in layout)</span><br /><pre class="errorlines">
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+<span class="lineno">  51</span>                android:layout_height="wrap_content"
+<span class="lineno">  52</span>                android:layout_below="@id/abs__action_bar_container" />
+<span class="lineno">  53</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer <span class="errorspan">android:id="@+id/abs__split_action_bar"</span>
+<span class="lineno">  54</span>                   android:layout_width="match_parent"
+<span class="lineno">  55</span>                   android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:53</span>: <span class="message">The id "abs__split_action_bar" in layout "abs__screen_action_bar_overlay" is missing from the following layout configurations: layout-xlarge (present in layout)</span><br /><pre class="errorlines">
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+<span class="lineno">  51</span>                android:layout_height="wrap_content"
+<span class="lineno">  52</span>                android:layout_below="@id/abs__action_bar_container" />
+<span class="lineno">  53</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer <span class="errorspan">android:id="@+id/abs__split_action_bar"</span>
+<span class="lineno">  54</span>                   android:layout_width="match_parent"
+<span class="lineno">  55</span>                   android:layout_height="wrap_content"
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks that layout variations are consistent.</div>
+<div class="explanation">
+This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.<br/>
+<br/>
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a <code>findViewById()</code> fails.<br/>
+<br/>
+There <b>are</b> cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InconsistentLayout" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="AllowBackup"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">AllowBackup: Missing <code>allowBackup</code> attribute</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/AndroidManifest.xml">/home/fenghb/contact-v2/actionbarsherlock/AndroidManifest.xml</a>:4</span>: <span class="message">Should explicitly set android:allowBackup to true or false (it's true by default, and that can have some security implications for the application's data)</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;?xml version="1.0" encoding="utf-8"?>
+<span class="lineno">   2</span> &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="440" android:versionName="4.4.0" package="com.actionbarsherlock">
+<span class="lineno">   3</span>   &lt;uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+<span class="lineno">   4</span>   <span class="errorspan">&lt;application/></span>
+<span class="lineno">   5</span> &lt;/manifest>
+<span class="lineno">   6</span> 
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/AndroidManifest.xml">/home/fenghb/contact-v2/actionbarsherlock/AndroidManifest.xml</a>:4</span>: <span class="message">Should explicitly set android:allowBackup to true or false (it's true by default, and that can have some security implications for the application's data)</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;?xml version="1.0" encoding="utf-8"?>
+<span class="lineno">   2</span> &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="440" android:versionName="4.4.0" package="com.actionbarsherlock">
+<span class="lineno">   3</span>   &lt;uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+<span class="lineno">   4</span>   <span class="errorspan">&lt;application/></span>
+<span class="lineno">   5</span> &lt;/manifest>
+<span class="lineno">   6</span> 
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensure that allowBackup is explicitly set in the application's manifest.</div>
+<div class="explanation">
+The allowBackup attribute determines if an application's data can be backed up and restored. It is documented at <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a><br/>
+<br/>
+By default, this flag is set to <code>true</code>. When this flag is set to <code>true</code>, application data can be backed up and restored by the user using <code>adb backup</code> and <code>adb restore</code>.<br/>
+<br/>
+This may have security consequences for an application. <code>adb backup</code> allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. <code>adb restore</code> allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.<br/>
+<br/>
+Setting <code>allowBackup="false"</code> opts an application out of both backup and restore.<br/>
+<br/>
+To fix this warning, decide whether your application should support backup, and explicitly set <code>android:allowBackup=(true|false)"</code>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a>
+</div><br/>To suppress this error, use the issue id "AllowBackup" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="ObsoleteLayoutParam"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ObsoleteLayoutParam: Obsolete layout params</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:33</span>: <span class="message">Invalid layout param in a FrameLayout: layout_alignParentTop</span><br /><pre class="errorlines">
+<span class="lineno">  30</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer android:id="@+id/abs__action_bar_container"
+<span class="lineno">  31</span>         android:layout_width="match_parent"
+<span class="lineno">  32</span>         android:layout_height="wrap_content"
+<span class="lineno">  33</span>         <span class="errorspan">android:layout_alignParentTop="true"</span>
+<span class="lineno">  34</span>         style="?attr/actionBarStyle"
+<span class="lineno">  35</span>         android:gravity="top">
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:33</span>: <span class="message">Invalid layout param in a FrameLayout: layout_alignParentTop</span><br /><pre class="errorlines">
+<span class="lineno">  30</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer android:id="@+id/abs__action_bar_container"
+<span class="lineno">  31</span>         android:layout_width="match_parent"
+<span class="lineno">  32</span>         android:layout_height="wrap_content"
+<span class="lineno">  33</span>         <span class="errorspan">android:layout_alignParentTop="true"</span>
+<span class="lineno">  34</span>         style="?attr/actionBarStyle"
+<span class="lineno">  35</span>         android:gravity="top">
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:52</span>: <span class="message">Invalid layout param in a FrameLayout: layout_below</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>                android:scaleType="fitXY"
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+<span class="lineno">  51</span>                android:layout_height="wrap_content"
+<span class="lineno">  52</span>                <span class="errorspan">android:layout_below="@id/abs__action_bar_container" /></span>
+<span class="lineno">  53</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer android:id="@+id/abs__split_action_bar"
+<span class="lineno">  54</span>                   android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:52</span>: <span class="message">Invalid layout param in a FrameLayout: layout_below</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>                android:scaleType="fitXY"
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+<span class="lineno">  51</span>                android:layout_height="wrap_content"
+<span class="lineno">  52</span>                <span class="errorspan">android:layout_below="@id/abs__action_bar_container" /></span>
+<span class="lineno">  53</span>     &lt;com.actionbarsherlock.internal.widget.ActionBarContainer android:id="@+id/abs__split_action_bar"
+<span class="lineno">  54</span>                   android:layout_width="match_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for layout params that are not valid for the given parent layout.</div>
+<div class="explanation">
+The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ObsoleteLayoutParam" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseCompoundDrawables"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:27</span>: <span class="message">This tag and its children can be replaced by one &lt;TextView/> and a compound drawable</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:background="?attr/activatedBackgroundIndicator"
+<span class="lineno">  25</span>     android:orientation="vertical" >
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">  28</span>         android:layout_width="wrap_content"
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:27</span>: <span class="message">This tag and its children can be replaced by one &lt;TextView/> and a compound drawable</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:background="?attr/activatedBackgroundIndicator"
+<span class="lineno">  25</span>     android:orientation="vertical" >
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">  28</span>         android:layout_width="wrap_content"
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks whether the current node can be replaced by a <code>TextView</code> using compound drawables.</div>
+<div class="explanation">
+A <code>LinearLayout</code> which contains an <code>ImageView</code> and a <code>TextView</code> can be more efficiently handled as a compound drawable (a single TextView, using the <code>drawableTop</code>, <code>drawableLeft</code>, <code>drawableRight</code> and/or <code>drawableBottom</code> attributes to draw one or more images adjacent to the text).<br/>
+<br/>
+If the two widgets are offset from each other with margins, this can be replaced with a <code>drawablePadding</code> attribute.<br/>
+<br/>
+There's a lint quickfix to perform this conversion in the Eclipse plugin.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseCompoundDrawables" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FloatMath"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">FloatMath: Using <code>FloatMath</code> instead of <code>Math</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:150</span>: <span class="message">Use java.lang.Math#floor instead of android.util.FloatMath#floor() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 147</span>         after.union(mBefore);
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.<span class="errorspan">floor(after.left),</span>
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.ceil(after.right),
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:150</span>: <span class="message">Use java.lang.Math#floor instead of android.util.FloatMath#floor() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 147</span>         after.union(mBefore);
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.<span class="errorspan">floor(after.left),</span>
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.ceil(after.right),
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:150</span>: <span class="message">Use java.lang.Math#floor instead of android.util.FloatMath#floor() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 147</span>         after.union(mBefore);
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.<span class="errorspan">floor(after.left),</span>
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.ceil(after.right),
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:150</span>: <span class="message">Use java.lang.Math#floor instead of android.util.FloatMath#floor() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 147</span>         after.union(mBefore);
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.<span class="errorspan">floor(after.left),</span>
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.ceil(after.right),
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:152</span>: <span class="message">Use java.lang.Math#ceil instead of android.util.FloatMath#ceil() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.floor(after.left),
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.<span class="errorspan">ceil(after.right),</span>
+<span class="lineno"> 153</span>                 (int) FloatMath.ceil(after.bottom));
+<span class="lineno"> 154</span>     }
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:152</span>: <span class="message">Use java.lang.Math#ceil instead of android.util.FloatMath#ceil() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.floor(after.left),
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.<span class="errorspan">ceil(after.right),</span>
+<span class="lineno"> 153</span>                 (int) FloatMath.ceil(after.bottom));
+<span class="lineno"> 154</span>     }
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:152</span>: <span class="message">Use java.lang.Math#ceil instead of android.util.FloatMath#ceil() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.floor(after.left),
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.<span class="errorspan">ceil(after.right),</span>
+<span class="lineno"> 153</span>                 (int) FloatMath.ceil(after.bottom));
+<span class="lineno"> 154</span>     }
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java</a>:152</span>: <span class="message">Use java.lang.Math#ceil instead of android.util.FloatMath#ceil() since it is faster as of API 8</span><br /><pre class="errorlines">
+<span class="lineno"> 149</span>         parent.invalidate(
+<span class="lineno"> 150</span>                 (int) FloatMath.floor(after.left),
+<span class="lineno"> 151</span>                 (int) FloatMath.floor(after.top),
+<span class="lineno"> 152</span>                 (int) FloatMath.<span class="errorspan">ceil(after.right),</span>
+<span class="lineno"> 153</span>                 (int) FloatMath.ceil(after.bottom));
+<span class="lineno"> 154</span>     }
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Suggests replacing <code>android.util.FloatMath</code> calls with <code>java.lang.Math</code></div>
+<div class="explanation">
+In older versions of Android, using <code>android.util.FloatMath</code> was recommended for performance reasons when operating on floats. However, on modern hardware doubles are just as fast as float (though they take more memory), and in recent versions of Android, <code>FloatMath</code> is actually slower than using <code>java.lang.Math</code> due to the way the JIT optimizes <code>java.lang.Math</code>. Therefore, you should use <code>Math</code> instead of <code>FloatMath</code> if you are only targeting Froyo and above.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#avoidfloat">http://developer.android.com/guide/practices/design/performance.html#avoidfloat</a>
+</div><br/>To suppress this error, use the issue id "FloatMath" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InefficientWeight"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InefficientWeight: Inefficient layout weight</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:53</span>: <span class="message">Use a layout_width of 0dip instead of wrap_content for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  50</span> 
+<span class="lineno">  51</span>     &lt;LinearLayout
+<span class="lineno">  52</span>             android:id="@+id/abs__search_edit_frame"
+<span class="lineno">  53</span>             <span class="errorspan">android:layout_width="wrap_content"</span>
+<span class="lineno">  54</span>             android:layout_height="wrap_content"
+<span class="lineno">  55</span>             android:layout_weight="1"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:53</span>: <span class="message">Use a layout_width of 0dip instead of wrap_content for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  50</span> 
+<span class="lineno">  51</span>     &lt;LinearLayout
+<span class="lineno">  52</span>             android:id="@+id/abs__search_edit_frame"
+<span class="lineno">  53</span>             <span class="errorspan">android:layout_width="wrap_content"</span>
+<span class="lineno">  54</span>             android:layout_height="wrap_content"
+<span class="lineno">  55</span>             android:layout_weight="1"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:77</span>: <span class="message">Use a layout_width of 0dip instead of wrap_content for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  74</span>         &lt;!-- Inner layout contains the app icon, button(s) and EditText -->
+<span class="lineno">  75</span>         &lt;LinearLayout
+<span class="lineno">  76</span>                 android:id="@+id/abs__search_plate"
+<span class="lineno">  77</span>                 <span class="errorspan">android:layout_width="wrap_content"</span>
+<span class="lineno">  78</span>                 android:layout_height="wrap_content"
+<span class="lineno">  79</span>                 android:layout_weight="1"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:77</span>: <span class="message">Use a layout_width of 0dip instead of wrap_content for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  74</span>         &lt;!-- Inner layout contains the app icon, button(s) and EditText -->
+<span class="lineno">  75</span>         &lt;LinearLayout
+<span class="lineno">  76</span>                 android:id="@+id/abs__search_plate"
+<span class="lineno">  77</span>                 <span class="errorspan">android:layout_width="wrap_content"</span>
+<span class="lineno">  78</span>                 android:layout_height="wrap_content"
+<span class="lineno">  79</span>                 android:layout_weight="1"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for inefficient weight declarations in LinearLayouts.</div>
+<div class="explanation">
+When only a single widget in a LinearLayout defines a weight, it is more efficient to assign a width/height of <code>0dp</code> to it since it will absorb all the remaining space anyway. With a declared width/height of <code>0dp</code> it does not have to measure its own size first.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InefficientWeight" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NestedWeights"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">NestedWeights: Nested layout weights</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:79</span>: <span class="message">Nested weights are bad for performance</span><br /><pre class="errorlines">
+<span class="lineno">  76</span>                 android:id="@+id/abs__search_plate"
+<span class="lineno">  77</span>                 android:layout_width="wrap_content"
+<span class="lineno">  78</span>                 android:layout_height="wrap_content"
+<span class="lineno">  79</span>                 <span class="errorspan">android:layout_weight="1"</span>
+<span class="lineno">  80</span>                 android:layout_gravity="center_vertical"
+<span class="lineno">  81</span>                 android:orientation="horizontal"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:79</span>: <span class="message">Nested weights are bad for performance</span><br /><pre class="errorlines">
+<span class="lineno">  76</span>                 android:id="@+id/abs__search_plate"
+<span class="lineno">  77</span>                 android:layout_width="wrap_content"
+<span class="lineno">  78</span>                 android:layout_height="wrap_content"
+<span class="lineno">  79</span>                 <span class="errorspan">android:layout_weight="1"</span>
+<span class="lineno">  80</span>                 android:layout_gravity="center_vertical"
+<span class="lineno">  81</span>                 android:orientation="horizontal"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:89</span>: <span class="message">Nested weights are bad for performance</span><br /><pre class="errorlines">
+<span class="lineno">  86</span>                   android:id="@+id/abs__search_src_text"
+<span class="lineno">  87</span>                   android:layout_height="36dip"
+<span class="lineno">  88</span>                   android:layout_width="0dp"
+<span class="lineno">  89</span>                   <span class="errorspan">android:layout_weight="1"</span>
+<span class="lineno">  90</span>                   android:minWidth="@dimen/abs__search_view_text_min_width"
+<span class="lineno">  91</span>                   android:layout_gravity="bottom"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:89</span>: <span class="message">Nested weights are bad for performance</span><br /><pre class="errorlines">
+<span class="lineno">  86</span>                   android:id="@+id/abs__search_src_text"
+<span class="lineno">  87</span>                   android:layout_height="36dip"
+<span class="lineno">  88</span>                   android:layout_width="0dp"
+<span class="lineno">  89</span>                   <span class="errorspan">android:layout_weight="1"</span>
+<span class="lineno">  90</span>                   android:minWidth="@dimen/abs__search_view_text_min_width"
+<span class="lineno">  91</span>                   android:layout_gravity="bottom"
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for nested layout weights, which are costly.</div>
+<div class="explanation">
+Layout weights require a widget to be measured twice. When a LinearLayout with non-zero weights is nested inside another LinearLayout with non-zero weights, then the number of measurements increase exponentially.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NestedWeights" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Overdraw"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Overdraw: Overdraw: Painting regions more than once</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:21</span>: <span class="message">Possible overdraw: Root element paints background ?attr/actionBarItemBackground with a theme that also paints a background (inferred theme is @android:style/Theme.Holo)</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>       class="com.actionbarsherlock.internal.widget.ActionBarView$HomeView"
+<span class="lineno">  19</span>       android:layout_width="wrap_content"
+<span class="lineno">  20</span>       android:layout_height="fill_parent"
+<span class="lineno">  21</span>       <span class="errorspan">android:background="?attr/actionBarItemBackground"></span>
+<span class="lineno">  22</span>     &lt;ImageView android:id="@id/abs__up"
+<span class="lineno">  23</span>                android:src="?attr/homeAsUpIndicator"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:21</span>: <span class="message">Possible overdraw: Root element paints background ?attr/actionBarItemBackground with a theme that also paints a background (inferred theme is @android:style/Theme.Holo)</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>       class="com.actionbarsherlock.internal.widget.ActionBarView$HomeView"
+<span class="lineno">  19</span>       android:layout_width="wrap_content"
+<span class="lineno">  20</span>       android:layout_height="fill_parent"
+<span class="lineno">  21</span>       <span class="errorspan">android:background="?attr/actionBarItemBackground"></span>
+<span class="lineno">  22</span>     &lt;ImageView android:id="@id/abs__up"
+<span class="lineno">  23</span>                android:src="?attr/homeAsUpIndicator"
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for overdraw issues (where a view is painted only to be fully painted over)</div>
+<div class="explanation">
+If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called "overdraw".<br/>
+<br/>
+NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.<br/>
+<br/>
+If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.<br/>
+<br/>
+Of course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.<br/>
+
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Overdraw" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml</a>:40</span>: <span class="message">The resource R.dimen.abs__dialog_min_width_major appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  37</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  38</span>          is along the major axis (that is the screen is landscape).  This may
+<span class="lineno">  39</span>          be either a fraction or a dimension. -->
+<span class="lineno">  40</span>     &lt;item type="dimen" <span class="errorspan">name="abs__dialog_min_width_major">45%&lt;/item></span>
+<span class="lineno">  41</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  42</span>          is along the minor axis (that is the screen is portrait).  This may
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml</a>:40</span>: <span class="message">The resource R.dimen.abs__dialog_min_width_major appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  37</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  38</span>          is along the major axis (that is the screen is landscape).  This may
+<span class="lineno">  39</span>          be either a fraction or a dimension. -->
+<span class="lineno">  40</span>     &lt;item type="dimen" <span class="errorspan">name="abs__dialog_min_width_major">45%&lt;/item></span>
+<span class="lineno">  41</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  42</span>          is along the minor axis (that is the screen is portrait).  This may
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml</a>:44</span>: <span class="message">The resource R.dimen.abs__dialog_min_width_minor appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  42</span>          is along the minor axis (that is the screen is portrait).  This may
+<span class="lineno">  43</span>          be either a fraction or a dimension. -->
+<span class="lineno">  44</span>     &lt;item type="dimen" <span class="errorspan">name="abs__dialog_min_width_minor">72%&lt;/item></span>
+<span class="lineno">  45</span> &lt;/resources>
+<span class="lineno">  46</span> 
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values-xlarge/abs__dimens.xml</a>:44</span>: <span class="message">The resource R.dimen.abs__dialog_min_width_minor appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>     &lt;!-- The platform's desired minimum size for a dialog's width when it
+<span class="lineno">  42</span>          is along the minor axis (that is the screen is portrait).  This may
+<span class="lineno">  43</span>          be either a fraction or a dimension. -->
+<span class="lineno">  44</span>     &lt;item type="dimen" <span class="errorspan">name="abs__dialog_min_width_minor">72%&lt;/item></span>
+<span class="lineno">  45</span> &lt;/resources>
+<span class="lineno">  46</span> 
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml</a></span>: <span class="message">The resource R.layout.sherlock_spinner_dropdown_item appears to be unused</span><br />
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 1 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml</a></span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml</a></span>: <span class="message">The resource R.layout.sherlock_spinner_dropdown_item appears to be unused</span><br />
+<ul></ul><button id="Location6DivLink" onclick="reveal('Location6Div');" />+ 1 Additional Locations...</button>
+<div id="Location6Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml</a></span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_item.xml</a></span>: <span class="message">The resource R.layout.sherlock_spinner_item appears to be unused</span><br />
+<ul></ul><button id="Location7DivLink" onclick="reveal('Location7Div');" />+ 1 Additional Locations...</button>
+<div id="Location7Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml</a></span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/sherlock_spinner_item.xml</a></span>: <span class="message">The resource R.layout.sherlock_spinner_item appears to be unused</span><br />
+<ul></ul><button id="Location8DivLink" onclick="reveal('Location8Div');" />+ 1 Additional Locations...</button>
+<div id="Location8Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml</a></span>
+</ul>
+</div><br/><br/>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UselessParent"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UselessParent: Useless parent layout</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:27</span>: <span class="message">This LinearLayout layout or its LinearLayout parent is useless; transfer the background attribute to the other view</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:background="?attr/activatedBackgroundIndicator"
+<span class="lineno">  25</span>     android:orientation="vertical" >
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">  28</span>         android:layout_width="wrap_content"
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:27</span>: <span class="message">This LinearLayout layout or its LinearLayout parent is useless; transfer the background attribute to the other view</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:background="?attr/activatedBackgroundIndicator"
+<span class="lineno">  25</span>     android:orientation="vertical" >
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">  28</span>         android:layout_width="wrap_content"
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks whether a parent layout can be removed.</div>
+<div class="explanation">
+A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UselessParent" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Typography"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Typography</a><div class="categorySeparator"></div>
+</div>
+<a name="TypographyEllipsis"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TypographyEllipsis: Ellipsis string can be replaced with ellipsis character</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values/abs__strings.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values/abs__strings.xml</a>:31</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  28</span>     &lt;string name="abs__action_mode_done">Done&lt;/string>
+<span class="lineno">  29</span> 
+<span class="lineno">  30</span>     &lt;!-- Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] -->
+<span class="lineno">  31</span>     &lt;string name="abs__activity_chooser_view_see_all"><span class="errorspan">See all...&lt;/string></span>
+<span class="lineno">  32</span>     &lt;!-- Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] -->
+<span class="lineno">  33</span>     &lt;string name="abs__activitychooserview_choose_application">Choose an application&lt;/string>
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/values/abs__strings.xml">/home/fenghb/contact-v2/actionbarsherlock/res/values/abs__strings.xml</a>:31</span>: <span class="message">Replace "..." with ellipsis character (&#8230;, &amp;#8230;) ?</span><br /><pre class="errorlines">
+<span class="lineno">  28</span>     &lt;string name="abs__action_mode_done">Done&lt;/string>
+<span class="lineno">  29</span> 
+<span class="lineno">  30</span>     &lt;!-- Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] -->
+<span class="lineno">  31</span>     &lt;string name="abs__activity_chooser_view_see_all"><span class="errorspan">See all...&lt;/string></span>
+<span class="lineno">  32</span>     &lt;!-- Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] -->
+<span class="lineno">  33</span>     &lt;string name="abs__activitychooserview_choose_application">Choose an application&lt;/string>
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for ellipsis strings (...) which can be replaced with an ellipsis character.</div>
+<div class="explanation">
+You can replace the string "..." with a dedicated ellipsis character, ellipsis character (&#8230;, &amp;#8230;). This can help make the text more readable.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Ellipsis">http://en.wikipedia.org/wiki/Ellipsis</a>
+</div><br/>To suppress this error, use the issue id "TypographyEllipsis" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconDuplicatesConfig"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDuplicatesConfig: Identical bitmaps across various configurations</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png</a></span>: <span class="message">The abs__list_divider_holo_dark.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 1 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png</a></span>: <span class="message">The abs__list_divider_holo_dark.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi</span><br />
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 1 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png</a></span>: <span class="message">The abs__list_divider_holo_light.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 1 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png</a></span>: <span class="message">The abs__list_divider_holo_light.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi</span><br />
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 1 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>mdpi</th></tr>
+</table>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Finds icons that have identical bitmaps across various configuration parameters.</div>
+<div class="explanation">
+If an icon is provided under different configuration parameters such as <code>drawable-hdpi</code> or <code>-v11</code>, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "IconDuplicatesConfig" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconDensities"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDensities: Icon densities validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in drawable-xhdpi: abs__ic_clear_normal.png (found in drawable-hdpi, drawable-mdpi)</span><br />
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in drawable-xhdpi: abs__ic_clear_normal.png (found in drawable-hdpi, drawable-mdpi)</span><br />
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensures that icons provide custom versions for all supported densities.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconDuplicates"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDuplicates: Duplicated icons under different names</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 1 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 1 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 1 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 1 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 1 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<button id="IconDuplicatesDivLink" onclick="reveal('IconDuplicatesDiv');" />+ 25 More Occurrences...</button>
+<div id="IconDuplicatesDiv" style="display: none">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_activated_holo.9.png, abs__list_longpressed_holo.9.png</span><br />
+<ul></ul><button id="Location6DivLink" onclick="reveal('Location6Div');" />+ 1 Additional Locations...</button>
+<div id="Location6Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" /></a>
+</td></tr><tr><th>hdpi</th><th>hdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location7DivLink" onclick="reveal('Location7Div');" />+ 1 Additional Locations...</button>
+<div id="Location7Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location8DivLink" onclick="reveal('Location8Div');" />+ 1 Additional Locations...</button>
+<div id="Location8Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location9DivLink" onclick="reveal('Location9Div');" />+ 1 Additional Locations...</button>
+<div id="Location9Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location10DivLink" onclick="reveal('Location10Div');" />+ 1 Additional Locations...</button>
+<div id="Location10Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location11DivLink" onclick="reveal('Location11Div');" />+ 1 Additional Locations...</button>
+<div id="Location11Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__list_pressed_holo_dark.9.png, abs__list_pressed_holo_light.9.png</span><br />
+<ul></ul><button id="Location12DivLink" onclick="reveal('Location12Div');" />+ 1 Additional Locations...</button>
+<div id="Location12Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location13DivLink" onclick="reveal('Location13Div');" />+ 1 Additional Locations...</button>
+<div id="Location13Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location14DivLink" onclick="reveal('Location14Div');" />+ 1 Additional Locations...</button>
+<div id="Location14Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location15DivLink" onclick="reveal('Location15Div');" />+ 1 Additional Locations...</button>
+<div id="Location15Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location16DivLink" onclick="reveal('Location16Div');" />+ 1 Additional Locations...</button>
+<div id="Location16Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location17DivLink" onclick="reveal('Location17Div');" />+ 1 Additional Locations...</button>
+<div id="Location17Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_primary_holo_dark.9.png, abs__progress_primary_holo_light.9.png</span><br />
+<ul></ul><button id="Location18DivLink" onclick="reveal('Location18Div');" />+ 1 Additional Locations...</button>
+<div id="Location18Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location19DivLink" onclick="reveal('Location19Div');" />+ 1 Additional Locations...</button>
+<div id="Location19Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location20DivLink" onclick="reveal('Location20Div');" />+ 1 Additional Locations...</button>
+<div id="Location20Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location21DivLink" onclick="reveal('Location21Div');" />+ 1 Additional Locations...</button>
+<div id="Location21Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location22DivLink" onclick="reveal('Location22Div');" />+ 1 Additional Locations...</button>
+<div id="Location22Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location23DivLink" onclick="reveal('Location23Div');" />+ 1 Additional Locations...</button>
+<div id="Location23Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__progress_secondary_holo_dark.9.png, abs__progress_secondary_holo_light.9.png</span><br />
+<ul></ul><button id="Location24DivLink" onclick="reveal('Location24Div');" />+ 1 Additional Locations...</button>
+<div id="Location24Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_right_selected_holo_dark.9.png, abs__textfield_search_right_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location25DivLink" onclick="reveal('Location25Div');" />+ 1 Additional Locations...</button>
+<div id="Location25Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>xhdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_right_selected_holo_dark.9.png, abs__textfield_search_right_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location26DivLink" onclick="reveal('Location26Div');" />+ 1 Additional Locations...</button>
+<div id="Location26Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>xhdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_right_selected_holo_dark.9.png, abs__textfield_search_right_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location27DivLink" onclick="reveal('Location27Div');" />+ 1 Additional Locations...</button>
+<div id="Location27Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>xhdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_right_selected_holo_dark.9.png, abs__textfield_search_right_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location28DivLink" onclick="reveal('Location28Div');" />+ 1 Additional Locations...</button>
+<div id="Location28Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>xhdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_selected_holo_dark.9.png, abs__textfield_search_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location29DivLink" onclick="reveal('Location29Div');" />+ 1 Additional Locations...</button>
+<div id="Location29Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png</a></span>: <span class="message">The following unrelated icon files have identical contents: abs__textfield_search_selected_holo_dark.9.png, abs__textfield_search_selected_holo_light.9.png</span><br />
+<ul></ul><button id="Location30DivLink" onclick="reveal('Location30Div');" />+ 1 Additional Locations...</button>
+<div id="Location30Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png">/home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" /></a>
+</td><td><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png"><img border="0" align="top" src="file:///home/fenghb/contact-v2/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" /></a>
+</td></tr><tr><th>mdpi</th><th>mdpi</th></tr>
+</table>
+</div>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Finds duplicated icons under different names.</div>
+<div class="explanation">
+If an icon is repeated under different names, you can consolidate and just use one of the icons and delete the others to make your application smaller. However, duplicated icons usually are not intentional and can sometimes point to icons that were accidentally overwritten or accidentally not updated.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "IconDuplicates" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="ViewConstructor"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ViewConstructor: Missing View constructors for XML inflation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java</a></span>: <span class="message">Custom view com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper is missing constructor used by tools: (Context) or (Context,AttributeSet) or (Context,AttributeSet,int)</span><br />
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java">/home/fenghb/contact-v2/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java</a></span>: <span class="message">Custom view com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper is missing constructor used by tools: (Context) or (Context,AttributeSet) or (Context,AttributeSet,int)</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Checks that custom views define the expected constructors.</div>
+<div class="explanation">
+Some layout tools (such as the Android layout editor for Eclipse) needs to find a constructor with one of the following signatures:<br/>
+* <code>View(Context context)</code><br/>
+* <code>View(Context context, AttributeSet attrs)</code><br/>
+* <code>View(Context context, AttributeSet attrs, int defStyle)</code><br/>
+<br/>
+If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if <code>View#isInEditMode()</code> is false, since that method will return <code>false</code> at runtime but true within a user interface editor.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ViewConstructor" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:22</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  19</span>       android:layout_width="wrap_content"
+<span class="lineno">  20</span>       android:layout_height="fill_parent"
+<span class="lineno">  21</span>       android:background="?attr/actionBarItemBackground">
+<span class="lineno">  22</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__up"</span>
+<span class="lineno">  23</span>                android:src="?attr/homeAsUpIndicator"
+<span class="lineno">  24</span>                android:layout_gravity="center_vertical|left"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:22</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  19</span>       android:layout_width="wrap_content"
+<span class="lineno">  20</span>       android:layout_height="fill_parent"
+<span class="lineno">  21</span>       android:background="?attr/actionBarItemBackground">
+<span class="lineno">  22</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__up"</span>
+<span class="lineno">  23</span>                android:src="?attr/homeAsUpIndicator"
+<span class="lineno">  24</span>                android:layout_gravity="center_vertical|left"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:29</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>                android:layout_width="wrap_content"
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_marginRight="-8dip" />
+<span class="lineno">  29</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__home"</span>
+<span class="lineno">  30</span>                android:layout_width="wrap_content"
+<span class="lineno">  31</span>                android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_home.xml</a>:29</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>                android:layout_width="wrap_content"
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_marginRight="-8dip" />
+<span class="lineno">  29</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__home"</span>
+<span class="lineno">  30</span>                android:layout_width="wrap_content"
+<span class="lineno">  31</span>                android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_title_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_title_item.xml</a>:25</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>               android:background="?attr/actionBarItemBackground"
+<span class="lineno">  23</span>               android:enabled="false">
+<span class="lineno">  24</span> 
+<span class="lineno">  25</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__up"</span>
+<span class="lineno">  26</span>                android:src="?attr/homeAsUpIndicator"
+<span class="lineno">  27</span>                android:layout_gravity="center_vertical|left"
+</pre>
+<button id="ContentDescriptionDivLink" onclick="reveal('ContentDescriptionDiv');" />+ 27 More Occurrences...</button>
+<div id="ContentDescriptionDiv" style="display: none">
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_title_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_bar_title_item.xml</a>:25</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>               android:background="?attr/actionBarItemBackground"
+<span class="lineno">  23</span>               android:enabled="false">
+<span class="lineno">  24</span> 
+<span class="lineno">  25</span>     <span class="errorspan">&lt;ImageView android:id="@id/abs__up"</span>
+<span class="lineno">  26</span>                android:src="?attr/homeAsUpIndicator"
+<span class="lineno">  27</span>                android:layout_gravity="center_vertical|left"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml</a>:27</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:paddingLeft="4dip"
+<span class="lineno">  25</span>     android:paddingRight="4dip"
+<span class="lineno">  26</span>     style="?attr/actionButtonStyle">
+<span class="lineno">  27</span>     <span class="errorspan">&lt;ImageButton android:id="@+id/abs__imageButton"</span>
+<span class="lineno">  28</span>                  android:layout_width="wrap_content"
+<span class="lineno">  29</span>                  android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml</a>:27</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  24</span>     android:paddingLeft="4dip"
+<span class="lineno">  25</span>     android:paddingRight="4dip"
+<span class="lineno">  26</span>     style="?attr/actionButtonStyle">
+<span class="lineno">  27</span>     <span class="errorspan">&lt;ImageButton android:id="@+id/abs__imageButton"</span>
+<span class="lineno">  28</span>                  android:layout_width="wrap_content"
+<span class="lineno">  29</span>                  android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml</a>:26</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>         android:layout_width="wrap_content"
+<span class="lineno">  24</span>         android:layout_height="fill_parent"
+<span class="lineno">  25</span>         android:layout_marginRight="16dip">
+<span class="lineno">  26</span>     <span class="errorspan">&lt;ImageView android:layout_width="wrap_content"</span>
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_gravity="center"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml</a>:26</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>         android:layout_width="wrap_content"
+<span class="lineno">  24</span>         android:layout_height="fill_parent"
+<span class="lineno">  25</span>         android:layout_marginRight="16dip">
+<span class="lineno">  26</span>     <span class="errorspan">&lt;ImageView android:layout_width="wrap_content"</span>
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_gravity="center"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml</a>:26</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>         android:layout_width="wrap_content"
+<span class="lineno">  24</span>         android:layout_height="fill_parent"
+<span class="lineno">  25</span>         android:layout_marginRight="16dip">
+<span class="lineno">  26</span>     <span class="errorspan">&lt;ImageView android:layout_width="wrap_content"</span>
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_gravity="center"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__action_mode_close_item.xml</a>:26</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>         android:layout_width="wrap_content"
+<span class="lineno">  24</span>         android:layout_height="fill_parent"
+<span class="lineno">  25</span>         android:layout_marginRight="16dip">
+<span class="lineno">  26</span>     <span class="errorspan">&lt;ImageView android:layout_width="wrap_content"</span>
+<span class="lineno">  27</span>                android:layout_height="wrap_content"
+<span class="lineno">  28</span>                android:layout_gravity="center"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:35</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         android:addStatesFromChildren="true"
+<span class="lineno">  33</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  34</span> 
+<span class="lineno">  35</span>         <span class="errorspan">&lt;ImageView android:id="@+id/abs__image"</span>
+<span class="lineno">  36</span>             android:layout_width="56dip"
+<span class="lineno">  37</span>             android:layout_height="36dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:35</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         android:addStatesFromChildren="true"
+<span class="lineno">  33</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  34</span> 
+<span class="lineno">  35</span>         <span class="errorspan">&lt;ImageView android:id="@+id/abs__image"</span>
+<span class="lineno">  36</span>             android:layout_width="56dip"
+<span class="lineno">  37</span>             android:layout_height="36dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:57</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         android:addStatesFromChildren="true"
+<span class="lineno">  55</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  56</span> 
+<span class="lineno">  57</span>         <span class="errorspan">&lt;ImageView android:id="@+id/abs__image"</span>
+<span class="lineno">  58</span>             android:layout_width="56dip"
+<span class="lineno">  59</span>             android:layout_height="36dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view.xml</a>:57</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         android:addStatesFromChildren="true"
+<span class="lineno">  55</span>         android:background="?attr/actionBarItemBackground">
+<span class="lineno">  56</span> 
+<span class="lineno">  57</span>         <span class="errorspan">&lt;ImageView android:id="@+id/abs__image"</span>
+<span class="lineno">  58</span>             android:layout_width="56dip"
+<span class="lineno">  59</span>             android:layout_height="36dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:32</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+<span class="lineno">  30</span>         android:duplicateParentState="true" >
+<span class="lineno">  31</span> 
+<span class="lineno">  32</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  33</span>             android:id="@+id/abs__icon"
+<span class="lineno">  34</span>             android:layout_width="32dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml</a>:32</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>         android:layout_height="match_parent"
+<span class="lineno">  30</span>         android:duplicateParentState="true" >
+<span class="lineno">  31</span> 
+<span class="lineno">  32</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  33</span>             android:id="@+id/abs__icon"
+<span class="lineno">  34</span>             android:layout_width="32dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml</a>:17</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>      limitations under the License.
+<span class="lineno">  15</span> -->
+<span class="lineno">  16</span> 
+<span class="lineno">  17</span> <span class="errorspan">&lt;ImageView xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">  18</span>     android:id="@+id/abs__icon"
+<span class="lineno">  19</span>     android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml</a>:17</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>      limitations under the License.
+<span class="lineno">  15</span> -->
+<span class="lineno">  16</span> 
+<span class="lineno">  17</span> <span class="errorspan">&lt;ImageView xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">  18</span>     android:id="@+id/abs__icon"
+<span class="lineno">  19</span>     android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml</a>:45</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  42</span>             android:visibility="gone"
+<span class="lineno">  43</span>             style="?attr/actionModeStyle" />
+<span class="lineno">  44</span>     &lt;/com.actionbarsherlock.internal.widget.ActionBarContainer>
+<span class="lineno">  45</span>     <span class="errorspan">&lt;ImageView android:src="?attr/windowContentOverlay"</span>
+<span class="lineno">  46</span>                android:scaleType="fitXY"
+<span class="lineno">  47</span>                android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml</a>:45</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  42</span>             android:visibility="gone"
+<span class="lineno">  43</span>             style="?attr/actionModeStyle" />
+<span class="lineno">  44</span>     &lt;/com.actionbarsherlock.internal.widget.ActionBarContainer>
+<span class="lineno">  45</span>     <span class="errorspan">&lt;ImageView android:src="?attr/windowContentOverlay"</span>
+<span class="lineno">  46</span>                android:scaleType="fitXY"
+<span class="lineno">  47</span>                android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:48</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>             android:visibility="gone"
+<span class="lineno">  46</span>             style="?attr/actionModeStyle" />
+<span class="lineno">  47</span>     &lt;/com.actionbarsherlock.internal.widget.ActionBarContainer>
+<span class="lineno">  48</span>     <span class="errorspan">&lt;ImageView android:src="?attr/windowContentOverlay"</span>
+<span class="lineno">  49</span>                android:scaleType="fitXY"
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml</a>:48</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>             android:visibility="gone"
+<span class="lineno">  46</span>             style="?attr/actionModeStyle" />
+<span class="lineno">  47</span>     &lt;/com.actionbarsherlock.internal.widget.ActionBarContainer>
+<span class="lineno">  48</span>     <span class="errorspan">&lt;ImageView android:src="?attr/windowContentOverlay"</span>
+<span class="lineno">  49</span>                android:scaleType="fitXY"
+<span class="lineno">  50</span>                android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:29</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     &lt;!-- Icons come first in the layout, since their placement doesn't depend on
+<span class="lineno">  28</span>          the placement of the text views. -->
+<span class="lineno">  29</span>     <span class="errorspan">&lt;ImageView android:id="@android:id/icon1"</span>
+<span class="lineno">  30</span>                android:layout_width="@dimen/abs__dropdownitem_icon_width"
+<span class="lineno">  31</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:29</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>     &lt;!-- Icons come first in the layout, since their placement doesn't depend on
+<span class="lineno">  28</span>          the placement of the text views. -->
+<span class="lineno">  29</span>     <span class="errorspan">&lt;ImageView android:id="@android:id/icon1"</span>
+<span class="lineno">  30</span>                android:layout_width="@dimen/abs__dropdownitem_icon_width"
+<span class="lineno">  31</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:38</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  35</span>                android:layout_alignParentBottom="true"
+<span class="lineno">  36</span>                android:visibility="invisible" />
+<span class="lineno">  37</span> 
+<span class="lineno">  38</span>     <span class="errorspan">&lt;ImageView android:id="@+id/edit_query"</span>
+<span class="lineno">  39</span>                android:layout_width="48dip"
+<span class="lineno">  40</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:38</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  35</span>                android:layout_alignParentBottom="true"
+<span class="lineno">  36</span>                android:visibility="invisible" />
+<span class="lineno">  37</span> 
+<span class="lineno">  38</span>     <span class="errorspan">&lt;ImageView android:id="@+id/edit_query"</span>
+<span class="lineno">  39</span>                android:layout_width="48dip"
+<span class="lineno">  40</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:49</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  46</span>                android:background="?attr/searchViewEditQueryBackground"
+<span class="lineno">  47</span>                android:visibility="gone" />
+<span class="lineno">  48</span> 
+<span class="lineno">  49</span>     <span class="errorspan">&lt;ImageView android:id="@android:id/icon2"</span>
+<span class="lineno">  50</span>                android:layout_width="48dip"
+<span class="lineno">  51</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml</a>:49</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  46</span>                android:background="?attr/searchViewEditQueryBackground"
+<span class="lineno">  47</span>                android:visibility="gone" />
+<span class="lineno">  48</span> 
+<span class="lineno">  49</span>     <span class="errorspan">&lt;ImageView android:id="@android:id/icon2"</span>
+<span class="lineno">  50</span>                android:layout_width="48dip"
+<span class="lineno">  51</span>                android:layout_height="48dip"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:63</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  60</span>             android:layout_marginRight="8dip"
+<span class="lineno">  61</span>             android:orientation="horizontal">
+<span class="lineno">  62</span> 
+<span class="lineno">  63</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  64</span>                 android:id="@+id/abs__search_mag_icon"
+<span class="lineno">  65</span>                 android:layout_width="@dimen/abs__dropdownitem_icon_width"
+</pre>
+<span class="location"><a href="file:///home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml">/home/fenghb/contact-v2/actionbarsherlock/res/layout/abs__search_view.xml</a>:63</span>: <span class="message">[Accessibility] Missing contentDescription attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  60</span>             android:layout_marginRight="8dip"
+<span class="lineno">  61</span>             android:orientation="horizontal">
+<span class="lineno">  62</span> 
+<span class="lineno">  63</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  64</span>                 android:id="@+id/abs__search_mag_icon"
+<span class="lineno">  65</span>                 android:layout_width="@dimen/abs__dropdownitem_icon_width"
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensures that image widgets provide a contentDescription.</div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for Back buttons, which are not common on the Android platform.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hidden easter eggs.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Suggests replacing uses of getters with direct field access within a class.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Ensures that launcher icons, notification icons etc have the correct size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlCompat"></a>
+<div class="issue">
+<div class="id">RtlCompat<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Looks for compatibility issues with RTL support.</div>
+<div class="explanation">
+API 17 adds a <code>textAlignment</code> attribute to specify text alignment. However, if you are supporting older versions than API 17, you must <b>also</b> specify a gravity or layout_gravity attribute, since older platforms will ignore the <code>textAlignment</code> attribute.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlCompat" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlEnabled"></a>
+<div class="issue">
+<div class="id">RtlEnabled<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 3 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for usages of right-to-left text constants without enabling RTL support.</div>
+<div class="explanation">
+To enable right-to-left support, when running on API 17 and higher, you must set the <code>android:supportsRtl</code> attribute in the manifest <code>&lt;application></code> element.<br/>
+If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlEnabled" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlHardcoded"></a>
+<div class="issue">
+<div class="id">RtlHardcoded<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for hardcoded left/right constants which could be start/end for bidirectional text.</div>
+<div class="explanation">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for TextViews which should probably allow their text to be selected.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for comment markers of the form <code>//STOPSHIP</code> which indicates that code should not be released yet.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for straight quotes which can be replaced by curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Looks for unused id's.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a @SuppressLint annotation in the Java code<br/>
+2. With a tools:ignore attribute in the XML file<br/>
+3. With a lint.xml configuration file in the project<br/>
+4. With a lint.xml configuration file passed to lint via the --config flag<br/>
+5. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a @SuppressLint("id") annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as "UnusedResources" or {"UnusedResources","UnusedIds"}, or it can be "all" to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a tools:ignore="id" attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the xmlns:android declaration:<br/>
+* xmlns:tools="http://schemas.android.com/tools"<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named lint.xml and place it at the root directory of the project in which it applies. (If you use the Eclipse plugin's Lint view, you can suppress errors there via the toolbar and Eclipse will create the lint.xml file for you.).<br/>
+<br/>
+The format of the lint.xml file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+    &lt;!-- Disable this given check in this project --><br/>
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+    &lt;issue id="ObsoleteLayoutParam"><br/>
+        &lt;ignore path="res/layout/activation.xml" /><br/>
+        &lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+    &lt;issue id="UselessLeaf"><br/>
+        &lt;ignore path="res/layout/main.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+    &lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+"lint --ignore UnusedResources,UselessLeaf /my/project/path"<br/>
+
+
+</body>
+</html>
